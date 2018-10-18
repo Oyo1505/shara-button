@@ -1,0 +1,142 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+body {
+  background: -webkit-linear-gradient(left, #202125 10%, #1D1E22 90%);
+  background: linear-gradient(left, #202125 10%, #1D1E22 90%);
+  padding: 2em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  margin-top: 4%;
+  left: 50%;
+}
+
+#container:hover {
+  cursor: pointer;
+}
+
+#container:hover #share-button {
+  transform: rotate(360deg);
+  transition: 0.5s ease-out;
+}
+
+#container:hover #content-media {
+  transform: translate3d(0, 0, 0);
+}
+
+#container:hover #content-media .icon-media {
+  opacity: 1;
+}
+
+#share-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  background: #fff;
+  color: #242424;
+  margin-top: -25px;
+  left: -10px;
+  top: 50%;
+  box-shadow: 2px 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.social-media {
+  overflow: hidden;
+  height: 50px;
+}
+
+#content-media {
+  font-family: sans-serif;
+  font-size: .75em;
+  display: block;
+  height: 50px;
+  text-align: center;
+  padding-left: 50px;
+  line-height: 50px;
+  color: #242424;
+}
+
+.icon-media {
+  width: 50px;
+  height: 35.71429px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  background: #fff;
+  border-radius: 4px;
+  float: left;
+  transform: translate3d(-500%, 0, 0);
+  -moz-box-shadow: 0px 1px 7px -1px #1c1b18;
+  -webkit-box-shadow: 0px 1px 7px -1px #1c1b18;
+  box-shadow: 0px 1px 7px -1px #1c1b18;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+  background-color: #fff;
+  -moz-border-radius: 17px;
+  -webkit-border-radius: 17px;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.icon-media a {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+a:visited {
+  color: black;
+}
+
+#fb:hover {
+  background-color: #4267B2;
+}
+
+#fb:hover i {
+  color: #fff;
+}
+
+#tw:hover {
+  background-color: #1DA1F2;
+}
+
+#tw:hover i {
+  color: #fff;
+}
+
+#inst i {
+  color: #000;
+}
+
+#inst:hover {
+  background: -webkit-linear-gradient(0.2turn, #ECC400, #EB0714, #7939B3);
+  background: linear-gradient(0.2turn, #ECC400, #EB0714, #7939B3);
+}
+
+#inst:hover i {
+  color: #fff;
+}
+
+#git:hover {
+  background-color: #24292E;
+}
+
+#git:hover i {
+  color: #fff;
+}
+
+.clear {
+  clear: both;
+}
